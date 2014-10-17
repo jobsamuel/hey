@@ -1,0 +1,20 @@
+{
+  "name": "hey",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jobsamuel/hey",
+  "description": "A demo chat app that uses Socket.IO, AngularJS and MongoDB.",
+  "main": "app.js",
+  "keywords": [
+    "demo",
+    "chat",
+    "socket.io"
+  ],
+  "authors": [
+    "Jobsamuel Núñez"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "foundation": "~5.4.6",
+    "angular": "~1.3.0"
+  }
+}

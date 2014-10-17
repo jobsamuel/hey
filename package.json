@@ -1,0 +1,29 @@
+{
+  "name": "hey",
+  "version": "0.0.0",
+  "description": "A demo chat app that uses Socket.IO, AngularJS and MongoDB.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jobsamuel/hey.git"
+  },
+  "keywords": [
+    "demo",
+    "chat",
+    "socket.io"
+  ],
+  "author": "Jobsamuel Núñez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobsamuel/hey/issues"
+  },
+  "homepage": "https://github.com/jobsamuel/hey",
+  "dependencies": {
+    "express": "^4.9.7",
+    "mongoose": "^3.8.17",
+    "socket.io": "^1.1.0"
+  }
+}

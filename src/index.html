@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" ng-app="main">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey!</title>
+
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="common/foundation/css/normalize.css">
+  <link rel="stylesheet" href="common/foundation/css/foundation.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- Foundation JS -->
+  <script src="common/foundation/js/vendor/modernizr.js"></script>
+
+  <!-- Main JS -->
+  <script src="common/angular/angular.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+<body ng-controller="mainCtrl">
+<div class="row">
+  <div class="large-5 large-centered columns">
+    <h1> Hey! </h1>
+    <div class="panel chat-panel radius">
+      <p ng-repeat="m in messages"> {{ m.msg }} </p>
+    </div>
+    <form ng-submit="send(message)">
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <input type="text" placeholder="Type something..." ng-model="message">
+        </div>
+        <div class="small-2 columns">
+          <button type="submit" class="button postfix"> Send </button>
+        </div>
+      </div>  
+    </form>
+  </div>
+</div>
+</body>
+</html>
