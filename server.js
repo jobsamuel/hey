@@ -42,12 +42,10 @@ io.on('connection', function(socket){
 });
 
 app.get('/api/messages', function (req, res) {
-
-  console.log("What's up? Anybody called me?")
-
-  Chat.find({}, function(err, doc) {
+  console.log("What's up?");
+  Chat.find({}, function(err, docs) {
     if (err) throw err;
-    res.send(doc);
+    res.send(docs);
   });
 
 });
