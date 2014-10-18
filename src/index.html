@@ -27,7 +27,7 @@
 <div class="row">
   <div class="large-5 large-centered columns">
     <h1> Hey! </h1>
-    <div class="panel chat-panel radius">
+    <div class="panel chat-panel radius" id="chat">
       <p ng-repeat="m in messages"> {{ m.msg }} </p>
     </div>
     <form ng-submit="send(message)">
